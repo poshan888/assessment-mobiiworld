@@ -1,7 +1,8 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Product } from '../../core/services/product';
 import { CommonModule } from '@angular/common';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-product-list',
@@ -10,15 +11,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './product-list.scss',
 })
 export class ProductList {
-  products: any[] = [];
-
-  constructor(private productService: Product, private cdr: ChangeDetectorRef) {}
-
-  ngOnInit() {
-    this.productService.getProducts().subscribe((data) => {
-      this.products = [...data];
-      console.log(this.products);
-      this.cdr.detectChanges();
-    });
-  }
+  products = toSignal(inject(Product).getProducts(), { initialValue: [] });
 }

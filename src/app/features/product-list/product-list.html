@@ -1,27 +1,27 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Id</th>
-      <th scope="col">Name</th>
-      <th scope="col">Category</th>
-      <th scope="col">Price</th>
-      <th scope="col">Currency</th>
-      <th scope="col">Status</th>
-      <th scope="col">Rating</th>
-    </tr>
-  </thead>
-  <tbody>
-    @for (product of products; track product.id) {
-      <tr>
-        <td>{{product.id}}<i class="bi bi-alarm"></i></td>
-        <th scope="row"><a routerLink="/products/123">{{product.name}}</a></th>
-        <td>{{product.category}}</td>
-        <td>{{product.price}}</td>
-        <td>{{product.currency}}</td>
-        <td><span class="badge rounded-pill text-bg-success">{{product.status}}</span></td>
-        <td>{{product.rating}}</td>
-      </tr>
-    }
-  </tbody>
-</table>
-<!-- <pre>{{products | json}}</pre> -->
+<div class="container-fluid">
+  <h3 class="text-primary">Products Listing</h3>
+  <div class="table-responsive-md">
+    <table class="table mt-3 sticky-top table-striped table-hover">
+      <thead class="table-light">
+        <tr>
+          <th class="text-secondary text-uppercase" scope="col">Name</th>
+          <th class="text-secondary text-uppercase" scope="col">Category</th>
+          <th class="text-secondary text-uppercase" scope="col">Price</th>
+          <th class="text-secondary text-uppercase" scope="col">Status</th>
+          <th class="text-secondary text-uppercase" scope="col">Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (product of products(); track product.id) {
+          <tr>
+            <th scope="row"><a [routerLink]="['/products', product.id]">{{product.name}}</a></th>
+            <td>{{product.category}}</td>
+            <td><strong><i class="bi bi-currency-rupee"></i>{{product.price}}</strong></td>
+            <td><small class="d-inline-flex px-2 fw-semibold rounded-pill text-sm" [ngClass]="product.status === 'In Stock' ? 'text-success-emphasis bg-success-subtle border border-success-subtle' : 'text-danger-emphasis bg-danger-subtle border border-danger-subtle'" >{{product.status}}</small></td>
+            <td>{{product.rating}}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

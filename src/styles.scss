@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,html {
+  height: 100%;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #343a40;
+
+  &:hover {
+    text-decoration: none;
+    color: #0074d9;
+  }
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.slider-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scrollLeft 20s linear infinite;
+}
+
+.card {
+  min-width: 250px;
+  height: 300px;
+  border-radius: 12px;
+  background: #f5f5f5;
+}
+
+.slider:hover .slider-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}

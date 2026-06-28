@@ -1,0 +1,25 @@
+.card {
+  position: relative;
+  
+  .product-like {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.75rem;
+  
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    object-position: top;
+    max-height: 200px;
+  }
+
+  .card-text {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

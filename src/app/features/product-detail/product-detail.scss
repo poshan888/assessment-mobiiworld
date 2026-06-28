@@ -1,0 +1,42 @@
+.varient-circle {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: #0c0c0c;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      transform: (-50%, -50%);
+      width: 1.75rem;
+      height: 1.75rem;
+      border: 1px solid #0400ff;
+      border-radius: 50%;
+    }
+  }
+
+  &.circle-grey {
+    background-color: #3a3939;
+  }
+
+  &.circle-silver {
+    background-color: #9c9c9c;
+  }
+}
+
+.product-image {
+  width: 100%;
+  max-height: 550px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

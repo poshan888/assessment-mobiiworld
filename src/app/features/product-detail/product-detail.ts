@@ -1,33 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '../../core/services/product';
-import { JsonPipe } from '@angular/common';
+import { CommonModule, JsonPipe } from '@angular/common';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { map, switchMap } from 'rxjs';
+import { ProductCard } from '../../shared/components/product-card/product-card';
 
 @Component({
   selector: 'app-product-detail',
-  imports: [JsonPipe],
+  imports: [JsonPipe, CommonModule, ProductCard],
   templateUrl: './product-detail.html',
   styleUrl: './product-detail.scss',
 })
 export class ProductDetail {
-  productId!: string;
-  product: any;
-  constructor(private route: ActivatedRoute, private productService:Product) {}
+  private productService = inject(Product);
+  private route = inject(ActivatedRoute);
 
-  ngOnInit() {
-    this.productId = this.route.snapshot.paramMap.get('id')!;
+  product = toSignal(
+    this.route.paramMap.pipe(
+      map(params => params.get('id')!),
+      switchMap(id => this.productService.getProductById(id))
+    )
+  );
 
-    console.log(this.productId);
-    this.productService
-      .getProductById(this.productId)
-      .subscribe((data:any) =>{
-      this.product=data;
-        console.log("selected Product: ", this.product);
-        
-      });
-  }
-  
-    
-  
-    
+  products = toSignal(inject(Product).getProducts(), { initialValue: [] });
 }

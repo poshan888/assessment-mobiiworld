@@ -1,4 +1,147 @@
-<p>product-detail works!</p>
--product-id {{ productId }} 
--product-name  <pre>{{ product | json }} </pre>
--product-name  {{ product.name }} 
+<div class="container-fluid">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Products</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Product Details</li>
+    </ol>
+  </nav>
+
+  @if (product()) {
+  <div class="row row-gap-3">
+    <div class="col-md-7">
+      <div class="product-image">
+        <img
+          src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Product Image" srcset="" width="350" height="450" class="img-fluid" />
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="d-flex flex-column align-items-start">
+        <small class="mb-2 px-2 fw-semibold rounded-pill text-sm"
+          [ngClass]="product()!.status === 'In Stock' ? 'text-success-emphasis bg-success-subtle border border-success-subtle' : 'text-danger-emphasis bg-danger-subtle border border-danger-subtle'">{{product()!.status}}</small>
+
+        <h4>{{ product()!.name }}</h4>
+        <p class="mb-2">{{ product()!.rating }}/5 <span class="text-secondary">(42 reviews)</span></p>
+        <div class="d-inline-flex align-items-baseline gap-2">
+          <h2 class="text-primary fs-1">₹{{ product()!.price }}</h2>
+          <del class="text-secondary">₹{{ product()!.price*20/10 }}</del>
+        </div>
+        <p class="text-secondary">{{ product()!.description }}</p>
+        <small class="mb-2 fw-semibold">Upholstery: People Grey</small>
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <div class="varient-circle circle-grey"></div>
+          <div class="varient-circle circle-silver"></div>
+          <div class="varient-circle circle-dark"></div>
+        </div>
+        <small class="mb-1 fw-semibold">Assembly Service</small>
+        <div class="d-flex align-items-center gap-2 mb-3">
+          <button class="btn btn-primary btn-sm">
+            <i class="bi bi-check"></i> Standard Delivery
+          </button>
+          <button class="btn btn-outline-dark btn-sm">
+            White Glove (+₹99.00)
+          </button>
+        </div>
+        <div class="d-grid gap-2 w-100">
+          <button class="btn btn-primary rounded-pill btn-lg">
+            <i class="bi bi-bag"></i> Add to Cart
+          </button>
+          <button class="btn btn-secondary rounded-pill btn-lg">
+            Buy Now
+          </button>
+        </div>
+        <hr class="my-4 w-100">
+        <div class="row w-100">
+          <div class="col-sm-6">
+            <div class="d-flex flex-column">
+              <small class="fw-semibold">
+                <i class="bi bi-truck text-primary"></i> Scheduled Delivery
+              </small>
+              <small class="text-secondary ps-3">Free for members</small>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="d-flex flex-column">
+              <small class="fw-semibold">
+                <i class="bi bi-shield-check text-primary"></i> Lifetime frame Warranty
+              </small>
+              <small class="text-secondary ps-3">Sold oak construction</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  } @else {
+  <p>Loading...</p>
+  }
+  <hr class="my-5">
+  
+  <ul class="nav nav-underline mb-3" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Description</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Specifications</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Reviews</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Uncompromising Comfort</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate doloribus non ratione nisi, iusto hic temporibus quod beatae, itaque quaerat deleniti veniam fugiat dicta, id facere pariatur minus reiciendis!</p>
+        </div>
+        <div class="col-md-6">
+          <h6>Artisian Craftsmanship</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate doloribus non ratione nisi, iusto hic temporibus quod beatae, itaque quaerat deleniti veniam fugiat dicta, id facere pariatur minus reiciendis!</p>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="1">
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Uncompromising Comfort</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate doloribus non ratione nisi, iusto hic temporibus quod beatae, itaque quaerat deleniti veniam fugiat dicta, id facere pariatur minus reiciendis!</p>
+        </div>
+        <div class="col-md-6">
+          <h6>Artisian Craftsmanship</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate doloribus non ratione nisi, iusto hic temporibus quod beatae, itaque quaerat deleniti veniam fugiat dicta, id facere pariatur minus reiciendis!</p>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="2">
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Uncompromising Comfort</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate doloribus non ratione nisi, iusto hic temporibus quod beatae, itaque quaerat deleniti veniam fugiat dicta, id facere pariatur minus reiciendis!</p>
+        </div>
+        <div class="col-md-6">
+          <h6>Artisian Craftsmanship</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate doloribus non ratione nisi, iusto hic temporibus quod beatae, itaque quaerat deleniti veniam fugiat dicta, id facere pariatur minus reiciendis!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="related-products">
+    <div class="section-header d-flex align-items-center justify-content-between mb-3">
+      <div class="section-title">
+        <h4 class="mb-0">Related Products</h4>
+        <small class="text-secondary">Based on your recent browsing</small>
+      </div>
+      <button class="btn btn-outline-primary d-inline-flex align-items-center gap-2 border-0">View all <i class="bi bi-arrow-right"></i></button>
+    </div>
+
+    <div class="slider">
+      <div class="slider-track">
+        @for (product of products()| slice:0:5; track product.id) {
+          <app-product-card [currentProduct]="product"></app-product-card>
+        }
+      </div>
+    </div>
+  </section>
+</div>
