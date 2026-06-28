@@ -1,0 +1,507 @@
+{
+  "products": [
+    {
+      "id": "PROD_001",
+      "name": "Nordic Lounge Chair",
+      "category": "Living Room",
+      "price": 899.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.5,
+      "reviews_count": 124,
+      "description": "The Nordic Lounge Chair is a masterpiece of Scandinavian design, blending ergonomic comfort with timeless aesthetics.",
+      "features": ["Hand-finished solid wood frame", "High-density resilient foam cushions", "Stain-resistant performance upholstery", "No assembly required"],
+      "specifications": {"material": "Solid Oak, Performance Fabric", "dimensions": "32\"W x 34\"D x 36\"H", "weight_capacity": "300 lbs"}
+    },
+    {
+      "id": "PROD_002",
+      "name": "Minimalist Floor Lamp",
+      "category": "Living Room",
+      "price": 249.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.8,
+      "description": "A sleek, industrial-inspired floor lamp that provides warm, ambient lighting for any modern space."
+    },
+    {
+      "id": "PROD_003",
+      "name": "Solid Oak Dining Table",
+      "category": "Kitchen & Dining",
+      "price": 1250.00,
+      "currency": "USD",
+      "status": "Low Stock",
+      "rating": 4.9,
+      "description": "A robust and elegant dining table made from premium solid oak, designed to be the centerpiece of your home."
+    },
+    {
+      "id": "PROD_004",
+      "name": "Eames Lounge Chair",
+      "category": "Living Room",
+      "price": 4500.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 5.0,
+      "description": "An iconic piece of mid-century modern design, offering unparalleled comfort and luxury."
+    },
+    {
+      "id": "PROD_005",
+      "name": "Velvet Accent Sofa",
+      "category": "Living Room",
+      "price": 1899.00,
+      "currency": "USD",
+      "status": "Low Stock",
+      "rating": 4.7,
+      "description": "A sophisticated velvet sofa that adds a touch of elegance and comfort to any interior."
+    },
+    {
+      "id": "PROD_006",
+      "name": "Marble Coffee Table",
+      "category": "Living Room",
+      "price": 750.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.4,
+      "description": "A beautiful coffee table featuring a genuine marble top and a minimalist metal frame."
+    },
+    {
+      "id": "PROD_007",
+      "name": "Ergonomic Office Chair",
+      "category": "Office",
+      "price": 599.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.6,
+      "description": "A high-performance office chair designed for maximum lumbar support and all-day comfort."
+    },
+    {
+      "id": "PROD_008",
+      "name": "Walnut Bookshelf",
+      "category": "Office",
+      "price": 1100.00,
+      "currency": "USD",
+      "status": "Low Stock",
+      "rating": 4.8,
+      "description": "A stunning walnut bookshelf with ample storage and a refined, modern silhouette."
+    },
+    {
+      "id": "PROD_009",
+      "name": "Floating Oak Shelf",
+      "category": "Decor",
+      "price": 85.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.3,
+      "description": "Hand-crafted floating oak shelf with a natural oil finish, perfect for displaying curated items."
+    },
+    {
+      "id": "PROD_010",
+      "name": "Ceramic Table Vase Set",
+      "category": "Decor",
+      "price": 120.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.7,
+      "description": "A trio of minimalist ceramic vases in varying heights and matte earthy tones."
+    },
+    {
+      "id": "PROD_011",
+      "name": "Suede Ottoman",
+      "category": "Living Room",
+      "price": 350.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.5,
+      "description": "A versatile suede ottoman that serves as both a footrest and an extra seat."
+    },
+    {
+      "id": "PROD_012",
+      "name": "Industrial Wall Sconce",
+      "category": "Lighting",
+      "price": 145.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.4,
+      "description": "Matte black metal wall sconce with a pivoting arm and brass accents."
+    },
+    {
+      "id": "PROD_013",
+      "name": "Wool Throw Blanket",
+      "category": "Bedding",
+      "price": 180.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.9,
+      "description": "Luxurious merino wool throw blanket with a classic herringbone pattern."
+    },
+    {
+      "id": "PROD_014",
+      "name": "Leather Desk Pad",
+      "category": "Office",
+      "price": 95.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.6,
+      "description": "Premium full-grain leather desk pad for a sophisticated and protective workspace."
+    },
+    {
+      "id": "PROD_015",
+      "name": "Abstract Canvas Art",
+      "category": "Decor",
+      "price": 420.00,
+      "currency": "USD",
+      "status": "Out of Stock",
+      "rating": 4.7,
+      "description": "Large-scale abstract canvas painting featuring textured strokes and a muted palette."
+    },
+    {
+      "id": "PROD_016",
+      "name": "Glass Pendant Light",
+      "category": "Lighting",
+      "price": 275.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.5,
+      "description": "Smoked glass pendant light with a filament bulb and braided cable."
+    },
+    {
+      "id": "PROD_017",
+      "name": "Modular Media Console",
+      "category": "Living Room",
+      "price": 1450.00,
+      "currency": "USD",
+      "status": "Low Stock",
+      "rating": 4.8,
+      "description": "Sleek modular media console with hidden cable management and soft-close doors."
+    },
+    {
+      "id": "PROD_018",
+      "name": "Task Desk Lamp",
+      "category": "Office",
+      "price": 110.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.3,
+      "description": "Adjustable task lamp with integrated USB charging and dimmable LED."
+    },
+    {
+      "id": "PROD_019",
+      "name": "Brass Wall Mirror",
+      "category": "Decor",
+      "price": 310.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.6,
+      "description": "Round oversized wall mirror with a thin brass-plated frame."
+    },
+    {
+      "id": "PROD_020",
+      "name": "Linen Duvet Set",
+      "category": "Bedding",
+      "price": 285.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.9,
+      "description": "Breathable washed linen duvet cover and pillowcase set in charcoal grey."
+    },
+    {
+      "id": "PROD_021",
+      "name": "Rattan Armchair",
+      "category": "Outdoor",
+      "price": 499.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.4,
+      "description": "Weather-resistant rattan armchair with plush white cushions."
+    },
+    {
+      "id": "PROD_022",
+      "name": "Concrete Side Table",
+      "category": "Living Room",
+      "price": 220.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.5,
+      "description": "Minimalist cylindrical side table made from lightweight polished concrete."
+    },
+    {
+      "id": "PROD_023",
+      "name": "Velvet Throw Pillows",
+      "category": "Decor",
+      "price": 65.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.7,
+      "description": "Set of two velvet throw pillows with feather-down inserts."
+    },
+    {
+      "id": "PROD_024",
+      "name": "Solid Teak Bench",
+      "category": "Outdoor",
+      "price": 580.00,
+      "currency": "USD",
+      "status": "Low Stock",
+      "rating": 4.8,
+      "description": "Durable solid teak bench, naturally resistant to elements, aging beautifully over time."
+    },
+    {
+      "id": "PROD_025",
+      "name": "Aromatherapy Diffuser",
+      "category": "Wellness",
+      "price": 80.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.6,
+      "description": "Ultrasonic stone aromatherapy diffuser with a quiet mist and ambient glow."
+    },
+    {
+      "id": "PROD_026",
+      "name": "Kitchen Knife Block",
+      "category": "Kitchen & Dining",
+      "price": 195.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.7,
+      "description": "Magnetic acacia wood knife block with a professional 5-piece stainless steel set."
+    },
+    {
+      "id": "PROD_027",
+      "name": "Woven Area Rug",
+      "category": "Decor",
+      "price": 640.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.5,
+      "description": "Hand-woven jute and wool area rug with a subtle geometric pattern."
+    },
+    {
+      "id": "PROD_028",
+      "name": "Copper Cookware Set",
+      "category": "Kitchen & Dining",
+      "price": 890.00,
+      "currency": "USD",
+      "status": "Low Stock",
+      "rating": 4.9,
+      "description": "Premium 10-piece copper cookware set with stainless steel lining for professional results."
+    },
+    {
+      "id": "PROD_029",
+      "name": "Canvas Laundry Basket",
+      "category": "Home Essentials",
+      "price": 55.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.3,
+      "description": "Heavy-duty canvas laundry basket with leather handles and collapsible frame."
+    },
+    {
+      "id": "PROD_030",
+      "name": "Bar Stool Set",
+      "category": "Kitchen & Dining",
+      "price": 320.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.5,
+      "description": "Set of two counter-height bar stools with ash wood seats and steel frames."
+    },
+    {
+      "id": "PROD_031",
+      "name": "Silk Eye Mask",
+      "category": "Wellness",
+      "price": 35.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.8,
+      "description": "Pure mulberry silk eye mask for a luxurious and restful sleep."
+    },
+    {
+      "id": "PROD_032",
+      "name": "Monitor Stand",
+      "category": "Office",
+      "price": 75.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.6,
+      "description": "Ergonomic walnut monitor stand with integrated storage for stationery."
+    },
+    {
+      "id": "PROD_033",
+      "name": "Bamboo Bath Mat",
+      "category": "Bath",
+      "price": 45.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.4,
+      "description": "Eco-friendly bamboo bath mat with a non-slip backing and water-resistant finish."
+    },
+    {
+      "id": "PROD_034",
+      "name": "Memory Foam Pillow",
+      "category": "Bedding",
+      "price": 110.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.7,
+      "description": "Cooling gel-infused memory foam pillow with a removable bamboo cover."
+    },
+    {
+      "id": "PROD_035",
+      "name": "Modern Pet Bed",
+      "category": "Home Essentials",
+      "price": 140.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.8,
+      "description": "Sleek pet bed with a removable orthopaedic cushion and designer felt frame."
+    },
+    {
+      "id": "PROD_036",
+      "name": "Glass Decanter Set",
+      "category": "Kitchen & Dining",
+      "price": 160.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.7,
+      "description": "Hand-blown glass decanter with four matching tumblers and a walnut tray."
+    },
+    {
+      "id": "PROD_037",
+      "name": "Standing Desk",
+      "category": "Office",
+      "price": 799.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.9,
+      "description": "Electric height-adjustable standing desk with a bamboo top and memory presets."
+    },
+    {
+      "id": "PROD_038",
+      "name": "Outdoor Lantern Set",
+      "category": "Outdoor",
+      "price": 130.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.5,
+      "description": "Pair of solar-powered outdoor lanterns with a flickering candle effect."
+    },
+    {
+      "id": "PROD_039",
+      "name": "Cotton Bath Towels",
+      "category": "Bath",
+      "price": 85.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.8,
+      "description": "Set of four ultra-absorbent Turkish cotton bath towels in a soft waffle weave."
+    },
+    {
+      "id": "PROD_040",
+      "name": "Jewelry Organizer",
+      "category": "Decor",
+      "price": 60.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.6,
+      "description": "Tiered jewelry organizer with a marble base and gold-finished hangers."
+    },
+    {
+      "id": "PROD_041",
+      "name": "Leather Key Loop",
+      "category": "Accessories",
+      "price": 25.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.2,
+      "description": "Minimalist vegetable-tanned leather key loop with a solid brass hardware."
+    },
+    {
+      "id": "PROD_042",
+      "name": "Yoga Mat",
+      "category": "Wellness",
+      "price": 95.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.9,
+      "description": "Eco-friendly natural rubber yoga mat with superior grip and alignment markings."
+    },
+    {
+      "id": "PROD_043",
+      "name": "Wall Clock",
+      "category": "Decor",
+      "price": 115.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.4,
+      "description": "Silent wall clock with a brushed aluminum frame and clean numerical markers."
+    },
+    {
+      "id": "PROD_044",
+      "name": "Coffee Pour-Over Kit",
+      "category": "Kitchen & Dining",
+      "price": 135.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.7,
+      "description": "Complete pour-over coffee kit with a ceramic dripper, glass server, and gooseneck kettle."
+    },
+    {
+      "id": "PROD_045",
+      "name": "Storage Trunk",
+      "category": "Living Room",
+      "price": 290.00,
+      "currency": "USD",
+      "status": "Low Stock",
+      "rating": 4.5,
+      "description": "Vintage-inspired storage trunk with a canvas exterior and leather detailing."
+    },
+    {
+      "id": "PROD_046",
+      "name": "Smart Thermostat",
+      "category": "Home Technology",
+      "price": 220.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.6,
+      "description": "Intelligent smart thermostat with remote control and energy-saving algorithms."
+    },
+    {
+      "id": "PROD_047",
+      "name": "Bluetooth Speaker",
+      "category": "Home Technology",
+      "price": 185.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.5,
+      "description": "Portable Bluetooth speaker with 360-degree sound and a waterproof fabric finish."
+    },
+    {
+      "id": "PROD_048",
+      "name": "Electric Kettle",
+      "category": "Kitchen & Dining",
+      "price": 125.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.7,
+      "description": "Designer electric kettle with variable temperature control and a matte finish."
+    },
+    {
+      "id": "PROD_049",
+      "name": "Cable Organizer Box",
+      "category": "Office",
+      "price": 40.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.4,
+      "description": "Sleek cable management box for hiding power strips and tangled cords."
+    },
+    {
+      "id": "PROD_050",
+      "name": "Desk Organizer Set",
+      "category": "Office",
+      "price": 90.00,
+      "currency": "USD",
+      "status": "In Stock",
+      "rating": 4.6,
+      "description": "Four-piece desk organizer set made from sustainable cork and recycled felt."
+    }
+  ]
+}
